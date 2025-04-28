@@ -1,26 +1,53 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1a1e2e;
+  --foreground: #ffffff;
+  --card: #242a3e;
+  --card-foreground: #ffffff;
+  --primary: #00e2c3;
+  --primary-foreground: #000000;
+  --secondary: #242a3e;
+  --secondary-foreground: #ffffff;
+  --muted: #2a3046;
+  --muted-foreground: #b0b5c1;
+  --accent: #00e2c3;
+  --accent-foreground: #000000;
+  --destructive: #ff0000;
+  --destructive-foreground: #ffffff;
+  --border: #242a3e;
+  --input: #242a3e; 
+  --ring: #00e2c3;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --background: #1a1e2e;
+  --foreground: #ffffff;
+  --card: #242a3e;
+  --card-foreground: #ffffff;
+  --primary: #00e2c3;
+  --primary-foreground: #000000;
+  --secondary: #242a3e;
+  --secondary-foreground: #ffffff;
+  --muted: #2a3046;
+  --muted-foreground: #b0b5c1;
+  --accent: #00e2c3;
+  --accent-foreground: #000000;
+  --destructive: #ff0000;
+  --destructive-foreground: #ffffff;
+  --border: #242a3e;
+  --input: #242a3e;
+  --ring: #00e2c3;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-[#242A3E];
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    @apply bg-[#1A1E2E];
+    @apply text-white;
+  }
 }
