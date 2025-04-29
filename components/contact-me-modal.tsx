@@ -3,7 +3,7 @@
 import type React from "react"
 import { useState, useRef, useEffect } from "react"
 import { X, Send } from "lucide-react"
-import { sendEmailAction } from "@/app/actions/sendEmail"
+import { sendEmail } from "@/components/actions/sendEmail"
 
 const RATE_LIMIT_WINDOW_MS = 60 * 1000; 
 const RATE_LIMIT_MAX_REQUESTS = 3;  
@@ -71,7 +71,7 @@ export default function ContactMeModal({ onClose }: ContactMeModalProps) {
 
     submissionTimestamps.current.push(now);
 
-    const result = await sendEmailAction(formData)
+    const result = await sendEmail(formData)
 
     setIsSubmitting(false)
 

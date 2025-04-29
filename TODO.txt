@@ -1,8 +1,4 @@
-Header Functionality:
--Back button goes back to previous tab
-
 Tabs:
--Add tabs that the user can switch between to see different information
 -Projects tab
 -Skills tab
 -Visual effect of sliding to new tab

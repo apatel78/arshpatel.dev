@@ -9,7 +9,7 @@ interface FormData {
   message: string
 }
 
-export async function sendEmailAction(formData: FormData) {
+export async function sendEmail(formData: FormData) {
   const user = process.env.EMAIL_USER
   const pass = process.env.EMAIL_PASS
   const recipient = "arshpatel2001@gmail.com"
