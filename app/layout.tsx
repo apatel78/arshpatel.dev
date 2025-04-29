@@ -21,6 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           <div className="flex flex-col min-h-screen bg-[#1A1E2E]">
+          <Header />
             <main className="flex-1 text-white">{children}</main>
             <footer className="border-t border-[#242A3E] py-4 text-center text-sm text-gray-400">
               <div className="container mx-auto">© {new Date().getFullYear()} Arsh Patel. All rights reserved.</div>
