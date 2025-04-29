@@ -15,14 +15,15 @@ export default function AboutMe() {
             />
           </div>
           <div>
-            <h1 className="text-2xl font-bold mb-2 text-foreground">Arsh Patel</h1>
-            <p className="text-muted-foreground mb-4">Title</p>
+            <h1 className="text-2xl font-bold mb-2 text-primary dark:text-[#00E2C3]">Arsh Patel</h1>
+            <p className="text-muted-foreground mb-4">Software Engineer</p>
             <div className="space-y-4">
               <p>
-                Bio
+                Welcome to my personal portfolio! I'm Arsh, a software engineer at ZF and a proud University of Michigan alum. 
               </p>
               <p>
-                Bio cont.
+              I enjoy creating all kinds of things from websites and video game mods to interactive football statistic graphs. 
+              As a big fantasy football fan, I designed this portfolio to resemble the look and feel of Sleeper.app.
               </p>
             </div>
           </div>
@@ -30,27 +31,34 @@ export default function AboutMe() {
       </div>
 
       <div className="bg-card text-card-foreground rounded-xl p-6">
-        <h2 className="text-xl font-bold mb-4 text-foreground">Experience</h2>
         <div className="space-y-6">
           <div>
             <div className="flex justify-between items-start mb-1">
-              <h3 className="font-medium text-foreground">Title</h3>
-              <span className="text-primary text-sm">Time Frame</span>
+              <h3 className="font-medium text-foreground">Software Engineer</h3>
+              <span className="text-primary text-sm">Jan 2023 - Present</span>
             </div>
-            <p className="text-sm text-muted-foreground mb-2">Company Name</p>
+            <p className="text-sm text-muted-foreground mb-2">ZF</p>
             <p className="text-sm">
-              Short Description
+            At ZF, I developed the communication module for Ford's braking software and improved efficiency by building an internal web tool that combined multiple apps. 
+            I automated regression testing using Python to eliminate manual script creation and integrated AUTOSAR standards into embedded C code for future vehicle models 
             </p>
           </div>
 
           <div>
-            <div className="flex justify-between items-start mb-1">
-              <h3 className="font-medium text-foreground">Title</h3>
-              <span className="text-primary text-sm">Time Frame</span>
+            <div className="mb-1">
+              <div className="flex justify-between items-baseline">
+                <h3 className="font-medium text-foreground">Software Engineer Co-Op</h3>
+                <span className="text-primary text-sm">Jan 2022 - Sep 2022</span>
+              </div>
+              <div className="flex justify-between items-baseline">
+                <p className="text-sm text-muted-foreground">ZF</p>
+                <span className="text-primary text-sm">May 2021 - Sep 2021</span>
+              </div>
             </div>
-            <p className="text-sm text-muted-foreground mb-2">Company Name</p>
             <p className="text-sm">
-              Short Description
+             I developed and rolled out a Jenkins-based CI/CD pipeline running night-time integration tests on a virtualized ECU environment, which detected issues earlier and improved test coverage. 
+             Additionally, I designed and implemented a Python GUI interfacing with in-house tools like Windchill and Git for release and code review process automation. 
+             I also designed and implemented ECU reflashing and project management automation tools.            
             </p>
           </div>
 

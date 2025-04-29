@@ -1,6 +1,5 @@
 Header Functionality:
 -Back button goes back to previous tab
--Clicking on chat opens up contact me form
 
 Tabs:
 -Add tabs that the user can switch between to see different information

@@ -6,9 +6,11 @@ import Image from "next/image"
 import { MessageSquare, FileText, ChevronLeft } from "lucide-react"
 import ResumeModal from "@/components/resume-modal"
 import { ThemeToggleMenu } from "@/components/theme-toggle-menu"
+import ContactMeModal from "@/components/contact-me-modal"
 
 export default function Header() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [contactMeModalOpen, setContactMeModalOpen] = useState(false)
+  const [resumeModalOpen, setResumeModalOpen] = useState(false);
 
   const triggerDownload = () => {
     const link = document.createElement("a");
@@ -20,11 +22,11 @@ export default function Header() {
   }
 
   const handleDownloadClick = () => {
-    setIsModalOpen(true);
+    setResumeModalOpen(true);
   };
 
   const handleCloseModal = () => {
-    setIsModalOpen(false);
+    setResumeModalOpen(false);
   };
 
   return (
@@ -36,7 +38,7 @@ export default function Header() {
               <Link href="/" className="mr-4">
                 <ChevronLeft className="h-6 w-6 text-muted-foreground transition-colors hover:text-foreground" />
               </Link>
-              <button className="relative">
+              <button onClick={() => setContactMeModalOpen(true)} className="relative">
                 <MessageSquare className="h-6 w-6 text-muted-foreground transition-colors hover:text-foreground" />
                 <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
                   1
@@ -72,7 +74,7 @@ export default function Header() {
       </header>
 
       <ResumeModal
-        isOpen={isModalOpen}
+        isOpen={resumeModalOpen}
         onClose={handleCloseModal}
         onConfirm={triggerDownload}
         title="Download Resume?"
@@ -80,6 +82,11 @@ export default function Header() {
         confirmText="Download"
         cancelText="Cancel"
       />
+      {contactMeModalOpen && (
+        <ContactMeModal
+          onClose={() => setContactMeModalOpen(false)}
+        />
+      )}
     </>
   )
 }
