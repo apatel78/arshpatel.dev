@@ -47,7 +47,7 @@ export default function Header() {
             <div className="flex items-center">
               <div className="h-8 w-8 rounded-full mr-2 overflow-hidden">
                 <Image
-                  src="/arshpatel.jpg?height=32&width=32"
+                  src="/arshpateldev/arshpatel.jpg?height=32&width=32"
                   alt="Profile"
                   width={32}
                   height={32}
