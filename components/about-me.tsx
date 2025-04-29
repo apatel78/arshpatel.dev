@@ -7,7 +7,7 @@ export default function AboutMe() {
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           <div className="w-40 h-40 rounded-full overflow-hidden bg-secondary flex-shrink-0">
             <Image
-              src="/arshpateldev/arshpatel.jpg"
+              src="/arshpatel.jpg"
               alt="Arsh Patel"
               width={160}
               height={160}
