@@ -20,10 +20,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
-          <div className="flex flex-col min-h-screen bg-[#1A1E2E]">
+          <div className="flex flex-col min-h-screen">
           <Header />
-            <main className="flex-1 text-white">{children}</main>
-            <footer className="border-t border-[#242A3E] py-4 text-center text-sm text-gray-400">
+            <main className="flex-1 text-foreground">{children}</main>
+            <footer className="border-t border-border py-4 text-center text-sm text-muted-foreground">
               <div className="container mx-auto">© {new Date().getFullYear()} Arsh Patel. All rights reserved.</div>
             </footer>
           </div>
