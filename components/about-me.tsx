@@ -40,7 +40,7 @@ export default function AboutMe() {
             <p className="text-sm text-muted-foreground mb-2">ZF</p>
             <p className="text-sm">
             At ZF, I developed the communication module for Ford's braking software and improved efficiency by building an internal web tool that combined multiple apps. 
-            I automated regression testing using Python to eliminate manual script creation and integrated AUTOSAR standards into embedded C code for future vehicle models 
+            I automated regression testing using Python to eliminate manual script creation and integrated AUTOSAR standards into embedded C code for future vehicle models. 
             </p>
           </div>
 
@@ -56,8 +56,8 @@ export default function AboutMe() {
               </div>
             </div>
             <p className="text-sm">
-             I developed and rolled out a Jenkins-based CI/CD pipeline running night-time integration tests on a virtualized ECU environment, which detected issues earlier and improved test coverage. 
-             Additionally, I designed and implemented a Python GUI interfacing with in-house tools like Windchill and Git for release and code review process automation.          
+             I developed and rolled out a Jenkins-based CI/CD pipeline running night-time integration tests on a virtualized ECU environment, which helped detect issues earlier and improved test coverage. 
+             Additionally, I designed and implemented a Python GUI that interfaces with tools like Windchill and Git to automate the release and code review process.          
             </p>
           </div>
 

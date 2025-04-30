@@ -1,10 +1,9 @@
 Tabs:
--Projects tab
--Skills tab
 -Visual effect of sliding to new tab
 
 Skills:
 -Allow user to move skills around as if setting a lineup
 
-Information:
--Fill in information
+Projects:
+-Clicking on project creates popout with more information?
+-Allow user to save whatever ranking 
