@@ -75,7 +75,7 @@ export default function ProjectsList() {
         </div>
       </div>
 
-      <div className="bg-gray-100 dark:bg-[#242A3E] rounded-xl overflow-hidden shadow-md dark:shadow-none border border-gray-200 dark:border-[#1A1E2E]">
+      <div className="bg-white dark:bg-[#242A3E] rounded-xl overflow-hidden shadow-md dark:shadow-none border border-gray-200 dark:border-[#1A1E2E]">
         <div className="grid grid-cols-12 text-xs text-gray-500 dark:text-gray-400 py-2 px-4 border-b border-gray-200 dark:border-[#1A1E2E]">
           <div className="col-span-1 text-center">#</div>
           <div className="col-span-7">PROJECT</div>
