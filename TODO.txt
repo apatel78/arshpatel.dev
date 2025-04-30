@@ -3,5 +3,8 @@ Tabs:
 -Skills tab
 -Visual effect of sliding to new tab
 
+Skills:
+-Allow user to move skills around as if setting a lineup
+
 Information:
 -Fill in information

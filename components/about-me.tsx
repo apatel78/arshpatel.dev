@@ -19,7 +19,7 @@ export default function AboutMe() {
             <p className="text-muted-foreground mb-4">Software Engineer</p>
             <div className="space-y-4">
               <p>
-                Welcome to my personal portfolio! I'm Arsh, a software engineer at ZF and a proud University of Michigan alum. 
+                Welcome to my personal portfolio! I'm Arsh, a software engineer at ZF and an alum of the University of Michigan. 
               </p>
               <p>
               I enjoy creating all kinds of things from websites and video game mods to interactive football statistic graphs. 
@@ -57,8 +57,7 @@ export default function AboutMe() {
             </div>
             <p className="text-sm">
              I developed and rolled out a Jenkins-based CI/CD pipeline running night-time integration tests on a virtualized ECU environment, which detected issues earlier and improved test coverage. 
-             Additionally, I designed and implemented a Python GUI interfacing with in-house tools like Windchill and Git for release and code review process automation. 
-             I also designed and implemented ECU reflashing and project management automation tools.            
+             Additionally, I designed and implemented a Python GUI interfacing with in-house tools like Windchill and Git for release and code review process automation.          
             </p>
           </div>
 
