@@ -15,26 +15,18 @@ datasource db {
   directUrl = env("DIRECT_URL")
 }
 
-// Define the core Project model
 model Project {
-  id   Int    @id // Use the existing numeric IDs (1-5)
-  name String // Add other static project details here if needed
-  // (e.g., iconUrl, githubUrl, projectLink)
-  // This table stores info *about* the project itself.
+  id   Int    @id 
+  name String 
 
-  // Relation: Each Project has one ProjectRanking record
   rankingData ProjectRanking?
 }
 
-// Refined model for cumulative ranking data
 model ProjectRanking {
-  // Use projectId as the primary key, ensuring one record per project
-  projectId    Int      @id @unique // Links to Project.id
+  projectId    Int      @id @unique 
   totalVotes   Int      @default(0)
   totalRankSum Int      @default(0)
   updatedAt    DateTime @updatedAt
 
-  // Relation: Links back to the Project using projectId
-  // onDelete: Cascade means if a Project is deleted, its ranking data is also deleted.
   project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
 }
