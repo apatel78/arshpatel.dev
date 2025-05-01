@@ -277,8 +277,8 @@ export default function ProjectsList() {
     };
 
     return (
-      <div ref={setNodeRef} style={style} {...attributes} {...listeners} className="grid grid-cols-12 items-center py-3 px-2 border-b border-gray-200 dark:border-[#1A1E2E] hover:bg-gray-50 dark:hover:bg-[#2A3046] cursor-grab touch-none">
-        <div className="col-span-1 flex items-center font-medium text-gray-400 p-4 gap-4">
+      <div ref={setNodeRef} style={style} {...attributes} {...listeners} className="grid grid-cols-12 items-center py-4 px-4 border-b border-border hover:bg-sky-100 dark:hover:bg-muted cursor-grab touch-none">
+        <div className="col-span-1 flex items-center font-medium text-gray-400 p-2 gap-4">
             <MdDragHandle className="h-4 w-4" />
             {index + 1}
         </div>
@@ -346,9 +346,9 @@ export default function ProjectsList() {
       collisionDetection={closestCenter}
       onDragEnd={handleDragEnd}
     >
-      <div className="max-w-7xl mx-auto text-black dark:text-white">
-        <div className="flex justify-between items-center mb-6">
-          <h1 className="text-xl font-bold">
+      <div className="w-full max-w-8xl mx-auto space-y-6 font-sans">
+        <div className="flex justify-between items-center mb-3">
+          <h1 className="text-lg font-bold text-foreground uppercase">
             {isDirty ? "User Rankings" : "Global Rankings"}
           </h1>
           {isDirty ? (
@@ -363,8 +363,8 @@ export default function ProjectsList() {
           )}
         </div>
 
-        <div className="bg-white dark:bg-[#242A3E] rounded-xl overflow-hidden shadow-md dark:shadow-none border border-gray-200 dark:border-[#1A1E2E]">
-          <div className="grid grid-cols-12 text-xs text-gray-500 dark:text-gray-400 py-2 px-2 border-b border-gray-200 dark:border-[#1A1E2E]">
+        <div className="bg-card text-card-foreground rounded-lg overflow-hidden shadow-md dark:shadow-none border border-border">
+          <div className="grid grid-cols-12 text-xs text-gray-500 dark:text-gray-400 py-3 px-4 border-b border-border">
             <div className="col-span-1 text-center">#</div>
             <div className="col-span-5">PROJECT</div>
             <div className="col-span-3 text-center">TECH</div>
