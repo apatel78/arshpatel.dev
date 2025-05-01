@@ -4,6 +4,5 @@ Tabs:
 Skills:
 -Allow user to move skills around as if setting a lineup
 
-Projects:
--Clicking on project creates popout with more information?
--Allow user to save whatever ranking 
+General:
+-Make all images svg

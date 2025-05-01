@@ -1,8 +1,9 @@
 import type React from "react"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import Header from "@/components/header"
-import { ThemeProvider } from "@/components/theme-provider"
+import Header from "../components/header"
+import { ThemeProvider } from "../components/theme-provider"
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -27,6 +28,7 @@ export default function RootLayout({
               <div className="container mx-auto">© {new Date().getFullYear()} Arsh Patel. All rights reserved.</div>
             </footer>
           </div>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>

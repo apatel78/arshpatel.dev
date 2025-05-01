@@ -67,7 +67,7 @@ export default function SkillsList() {
     //WR
     { id: 10, name: "C", category: "Languages", proficiency: 95, logo: <Image src="/c.svg" alt="C Logo" width={32} height={32} /> },
     { id: 11, name: "TypeScript & JavaScript", category: "Languages", proficiency: 90, logo: <SiTypescript className="h-8 w-8 text-[#3178C6]" /> },
-    { id: 12, name: "Python", category: "Languages", proficiency: 90, logo: <SiPython className="h-8 w-8 text-[#ffde57]" /> },
+    { id: 12, name: "Python", category: "Languages", proficiency: 90, logo: <SiPython className="h-8 w-8 text-[#306998]" /> },
     { id: 13, name: "C++", category: "Languages", proficiency: 90, logo: <SiCplusplus className="h-8 w-8 text-[#044F88]" /> },
     { id: 14, name: "C#", category: "Languages", proficiency: 70, logo: <TbBrandCSharp className="h-8 w-8 text-[#9b4993]" /> },
     { id: 15, name: "R", category: "Languages", proficiency: 70, logo: <SiR className="h-8 w-8 text-[#276DC2]" /> },
