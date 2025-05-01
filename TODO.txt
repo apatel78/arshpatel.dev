@@ -1,8 +1,8 @@
 Tabs:
 -Visual effect of sliding to new tab
 
-Skills:
--Allow user to move skills around as if setting a lineup
+Projects:
+-Fix projects for mobile view
 
 General:
 -Make all images svg

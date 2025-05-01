@@ -25,6 +25,11 @@ export default function AboutMe() {
               I enjoy creating all kinds of things from websites and video game mods to interactive football statistic graphs. 
               As a big fantasy football fan, I designed this portfolio to resemble the look and feel of Sleeper.app.
               </p>
+              <p>
+              In the Skills section, you'll find a lineup interface that mimics a fantasy football roster. You can drag and drop your skills into different positions, building your ideal "starting lineup" of strengths.
+              On the Projects page, the format resembles a fantasy football standings table. You're invited to rank each project, 
+              and your rankings contribute to a global leaderboard that reflects the community's collective preferences.
+              </p>
             </div>
           </div>
         </div>

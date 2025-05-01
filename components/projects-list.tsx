@@ -349,11 +349,11 @@ export default function ProjectsList() {
       <div className="w-full max-w-8xl mx-auto space-y-6 font-sans">
         <div className="flex justify-between items-center mb-3">
           <h1 className="text-lg font-bold text-foreground uppercase">
-            {isDirty ? "User Rankings" : "Global Rankings"}
+            {isDirty ? "User Standings" : "Global Standings"}
           </h1>
           {isDirty ? (
             <button onClick={handleSaveChanges} disabled={isSaving} className="bg-blue-500 text-white dark:bg-[#00E2C3] dark:text-black rounded-full px-4 py-1 text-sm flex items-center shadow hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed">
-              {isSaving ? 'Saving...' : 'Save Changes?'}
+              {isSaving ? 'Saving...' : 'Save Changes'}
             </button>
           ) : (
             <div className="bg-gray-100 dark:bg-[#242A3E] rounded-full px-4 py-1 text-sm flex items-center">
