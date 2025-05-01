@@ -348,7 +348,9 @@ export default function ProjectsList() {
     >
       <div className="max-w-7xl mx-auto text-black dark:text-white">
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-xl font-bold">Rankings</h1>
+          <h1 className="text-xl font-bold">
+            {isDirty ? "User Rankings" : "Global Rankings"}
+          </h1>
           {isDirty ? (
             <button onClick={handleSaveChanges} disabled={isSaving} className="bg-blue-500 text-white dark:bg-[#00E2C3] dark:text-black rounded-full px-4 py-1 text-sm flex items-center shadow hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed">
               {isSaving ? 'Saving...' : 'Save Changes?'}
