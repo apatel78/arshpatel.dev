@@ -277,25 +277,25 @@ export default function ProjectsList() {
     };
 
     return (
-      <div ref={setNodeRef} style={style} {...attributes} {...listeners} className="grid grid-cols-12 items-center py-4 px-4 border-b border-border hover:bg-sky-100 dark:hover:bg-muted cursor-grab touch-none">
-        <div className="col-span-1 flex items-center font-medium text-gray-400 p-2 gap-4">
+      <div ref={setNodeRef} style={style} {...attributes} {...listeners} className="grid grid-cols-12 md:grid-cols-12 items-center py-4 px-4 border-b border-border hover:bg-sky-100 dark:hover:bg-muted cursor-grab touch-none">
+        <div className="col-span-2 md:col-span-1 flex items-center font-medium text-gray-400 p-2 gap-1 md:gap-4">
             <MdDragHandle className="h-4 w-4" />
-            {index + 1}
+            <span>{index + 1}</span>
         </div>
-        <div className="col-span-5">
+        <div className="col-span-10 md:col-span-5 mb-2 md:mb-0">
           <div className="flex items-center">
             <div className="w-8 h-8 rounded-full bg-gray-100 dark:bg-[#1A1E2E] flex items-center justify-center mr-3 text-lg">
               {project.icon}
             </div>
-            <div>
-              <div className="font-medium">{project.name}</div>
-              <div className="text-xs text-gray-500 dark:text-gray-400">{project.shortDescription}</div>
+            <div className="flex-1 min-w-0">
+              <div className="font-medium truncate">{project.name}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 md:line-clamp-1">{project.shortDescription}</div>
             </div>
           </div>
         </div>
-        <div className="col-span-3 text-center">
-          <div className="flex justify-center items-center space-x-2">
-            {project.techStackIcons?.map((icon, index) => (
+        <div className="col-span-8 md:col-span-3 text-center">
+          <div className="flex flex-wrap justify-center items-center gap-1 md:gap-2">
+            {project.techStackIcons?.slice(0, 6).map((icon, index) => (
               <HoverCard key={index}>
                 <HoverCardTrigger asChild>
                   <span 
@@ -309,9 +309,12 @@ export default function ProjectsList() {
                 </HoverCardContent>
               </HoverCard>
             ))}
+            {project.techStackIcons.length > 6 && (
+              <span className="text-xs text-gray-500 dark:text-gray-400">+{project.techStackIcons.length - 6}</span>
+            )}
           </div>
         </div>
-        <div className="col-span-1 text-center">
+        <div className="col-span-2 md:col-span-1 text-center">
           <a
             href={project.githubUrl}
             target="_blank"
@@ -322,7 +325,7 @@ export default function ProjectsList() {
             <FaGithub className="h-4 w-4" />
           </a>
         </div>
-        <div className="col-span-2 text-center">
+        <div className="col-span-2 md:col-span-2 text-center">
           {project.projectLink && (
             <a
               href={project.projectLink}
@@ -364,7 +367,7 @@ export default function ProjectsList() {
         </div>
 
         <div className="bg-card text-card-foreground rounded-lg overflow-hidden shadow-md dark:shadow-none border border-border">
-          <div className="grid grid-cols-12 text-xs text-gray-500 dark:text-gray-400 py-3 px-4 border-b border-border">
+          <div className="hidden md:grid md:grid-cols-12 text-xs text-gray-500 dark:text-gray-400 py-3 px-4 border-b border-border">
             <div className="col-span-1 text-center">#</div>
             <div className="col-span-5">PROJECT</div>
             <div className="col-span-3 text-center">TECH</div>
