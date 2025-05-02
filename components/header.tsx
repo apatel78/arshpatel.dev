@@ -40,9 +40,6 @@ export default function Header() {
               </Link>
               <button onClick={() => setContactMeModalOpen(true)} className="relative">
                 <MessageSquare className="h-6 w-6 text-muted-foreground transition-colors hover:text-foreground" />
-                <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
-                  1
-                </span>
               </button>
             </div>
 
