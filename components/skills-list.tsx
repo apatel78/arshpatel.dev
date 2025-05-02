@@ -605,7 +605,7 @@ export default function SkillsList() {
             <div className="bg-card text-card-foreground rounded-lg p-4 md:p-6 mb-6 md:mb-0 md:w-1/2 h-fit">
               <div className="flex justify-between items-center mb-3">
                 <h1 className="text-lg font-bold text-foreground uppercase">
-                  Starters
+                  My Skills
                 </h1>
                 <h2 className="text-lg font-bold text-foreground uppercase">Mastery</h2>
               </div>
@@ -650,7 +650,7 @@ export default function SkillsList() {
               <div className="bg-card text-card-foreground rounded-lg p-4 md:p-6 md:w-1/2 h-fit">
                 <div className="flex justify-between items-center mb-3">
                   <h1 className="text-lg font-bold text-foreground uppercase">
-                    Bench
+                    Currently Learning
                   </h1>
                   <h2 className="text-lg font-bold text-foreground uppercase">Mastery</h2>
                 </div>
