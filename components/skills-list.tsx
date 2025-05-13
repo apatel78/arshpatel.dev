@@ -186,7 +186,9 @@ export default function SkillsList() {
     };
 
     addTopSkill(groupedSkills["Cloud and DevOps"]?.[0]);
-    groupedSkills["Databases and Query"]?.slice(0, 2).forEach(skill => addTopSkill(skill));
+    addTopSkill(groupedSkills["Cloud and DevOps"]?.[1]);
+    addTopSkill(groupedSkills["Cloud and DevOps"]?.[2]);
+    groupedSkills["Databases and Query"]?.slice(0, 3).forEach(skill => addTopSkill(skill));
     groupedSkills["Languages"]?.slice(0, 3).forEach(skill => addTopSkill(skill));
     addTopSkill(groupedSkills["Frameworks and Tools"]?.[0]);
 
@@ -466,7 +468,9 @@ export default function SkillsList() {
       };
 
       addTopSkill(groupedSkills["Cloud and DevOps"]?.[0]);
-      groupedSkills["Databases and Query"]?.slice(0, 2).forEach(skill => addTopSkill(skill));
+      addTopSkill(groupedSkills["Cloud and DevOps"]?.[1]);
+      addTopSkill(groupedSkills["Cloud and DevOps"]?.[2]);
+      groupedSkills["Databases and Query"]?.slice(0, 3).forEach(skill => addTopSkill(skill));
       groupedSkills["Languages"]?.slice(0, 3).forEach(skill => addTopSkill(skill));
       addTopSkill(groupedSkills["Frameworks and Tools"]?.[0]);
 

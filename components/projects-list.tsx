@@ -4,7 +4,7 @@ import type React from "react"
 import { Trophy, ExternalLink } from "lucide-react"
 import { FaGithub, FaPython, FaReact, FaDocker, FaAws } from "react-icons/fa"
 import { SiTypescript, SiPostgresql, SiGraphql, SiPrisma, SiCypress, SiMongodb } from "react-icons/si"
-import { TbBrandCSharp } from "react-icons/tb"
+import { TbBrandCSharp, TbBrandNextjs } from "react-icons/tb"
 import Image from 'next/image'
 import { VscGraphScatter } from "react-icons/vsc"
 import { RiLockPasswordLine } from "react-icons/ri";
@@ -31,6 +31,7 @@ import {
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { MdDragHandle } from "react-icons/md";
+import { IoLogoVercel } from "react-icons/io5"
 
 interface Project {
   id: number
@@ -42,7 +43,6 @@ interface Project {
   projectLink?: string
   techStack: string[]
   techStackIcons: React.ReactNode[]
-  longDescription: string
 }
 
 export const initialProjects: Project[] = [
@@ -50,7 +50,7 @@ export const initialProjects: Project[] = [
     id: 1,
     order: 1,
     name: "FlexspotFF",
-    icon: <Image src="/flexspotff.svg" alt="XP Adjuster Icon" width={30} height={30} />,
+    icon: <Image src="/flexspotff.svg" alt="Flexspotff Icon" width={30} height={30} />,
     shortDescription: "A full-stack fantasy football minigame and league statistics website.",
     githubUrl: "https://github.com/chrisparsons83/flexspotff",
     projectLink: "https://www.flexspotff.com/",
@@ -65,11 +65,25 @@ export const initialProjects: Project[] = [
       <FaDocker className="h-8 w-8 text-[#0DB7ED]" />,
       <FaAws className="h-8 w-8 text-[#FF9900]" />
     ],
-    longDescription: "FlexspotFF is a full-stack fantasy football minigame and league statistics website. It allows users to create and join fantasy football leagues, manage their teams, and track their progress throughout the season."
   },
   {
     id: 2,
     order: 2,
+    name: "Sleeper Roster Tracker",
+    icon: <Image src="/sleeper-roster-tracker.jpeg" alt="Sleeper Roster Tracker Icon" width={30} height={30} />,
+    shortDescription: "A website displays player aquisition methods for a users fantasy football roster.",
+    githubUrl: "https://github.com/apatel78/SleeperRosterTracker",
+    projectLink: "https://dynastyrostertracker-apatel78s-projects.vercel.app/",
+    techStack: ["Next.js", "TypeScript", "Vercel"],
+    techStackIcons: [
+      <TbBrandNextjs className="h-8 w-8 test-[e91e63]" />,
+      <SiTypescript className="h-8 w-8 text-[#3178C6]" />,
+      <IoLogoVercel className="h-8 w-8 text-[#000000]" />,
+    ],
+  },
+  {
+    id: 3,
+    order: 3,
     name: "Schedule I XP Adjuster",
     icon: <Image src="/xp-adjuster.svg" alt="XP Adjuster Icon" width={30} height={30} />,
     shortDescription: "A mod for the game Schedule I that allows you to adjust the XP reward for each task.",
@@ -79,11 +93,10 @@ export const initialProjects: Project[] = [
     techStackIcons: [
       <TbBrandCSharp className="h-8 w-8 text-[#9b4993]" />
     ],
-    longDescription: "The Schedule I XP Adjuster is a mod for the game Schedule I that allows you to adjust the XP reward for each task. It is a simple mod that allows you to adjust the XP reward for each task by a certain percentage."
   },
   {
-    id: 3,
-    order: 3,
+    id: 4,
+    order: 4,
     name: "Schedule I Larger Money Stacks",
     icon: <Image src="/larger-money-stacks.svg" alt="Money Stacks Icon" width={30} height={30} />,
     shortDescription: "A mod for the game Schedule I that raises the maximum amount of money per stack to 999,999.",
@@ -93,11 +106,10 @@ export const initialProjects: Project[] = [
     techStackIcons: [
       <TbBrandCSharp className="h-8 w-8 text-[#9b4993]" />
     ],        
-    longDescription: "The Schedule I Larger Money Stacks is a mod for the game Schedule I that raises the maximum amount of money per stack to 999,999. It is a simple mod that allows you to adjust the maximum amount of money per stack to 999,999."
   },
   {
-    id: 4,
-    order: 4,
+    id: 5,
+    order: 5,
     name: "FF Season Stats",
     icon: <VscGraphScatter className="h-5 w-5" />,
     shortDescription: "A Python script for visually representing user activity in their fantasy football league on Sleeper.",
@@ -106,11 +118,10 @@ export const initialProjects: Project[] = [
     techStackIcons: [
       <FaPython className="h-8 w-8 text-[#306998]" />,
     ],
-    longDescription: "The FF Season Stats is a Python script for visually representing user activity in their fantasy football league on Sleeper."
   },
   {
-    id: 5,
-    order: 5,
+    id: 6,
+    order: 6,
     name: "PassMan",
     icon: <RiLockPasswordLine className="h-5 w-5" />,
     shortDescription: "A private Discord bot designed to make password sharing easier.",
@@ -122,7 +133,6 @@ export const initialProjects: Project[] = [
       <FaDocker className="h-8 w-8 text-[#0DB7ED]" />,
       <FaAws className="h-8 w-8 text-[#FF9900]" />
     ],
-    longDescription: "PassMan is a private Discord bot designed to make password sharing easier."
   },
 ].sort((a, b) => b.id - a.id);
 
