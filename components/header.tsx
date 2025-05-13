@@ -41,18 +41,20 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 px-4">
             <div className="flex items-center">
             </div>
-            <div className="flex items-center">
-              <div className="h-8 w-8 rounded-full mr-2 overflow-hidden">
-                <Image
-                  src="/arshpatel.jpg?height=32&width=32"
-                  alt="Profile"
-                  width={32}
-                  height={32}
-                  className="object-cover"
-                />
-              </div>
-              <span className="font-semibold text-foreground">Arsh Patel</span>
-            </div>
+            <Link href="https://www.linkedin.com/in/arsh-patel1/" passHref legacyBehavior>
+              <a target="_blank" rel="noopener noreferrer" className="flex items-center cursor-pointer">
+                <div className="h-8 w-8 rounded-full mr-2 overflow-hidden">
+                  <Image
+                    src="/arshpatel.jpg?height=32&width=32"
+                    alt="Profile"
+                    width={32}
+                    height={32}
+                    className="object-cover"
+                  />
+                </div>
+                <span className="font-semibold text-foreground">Arsh Patel</span>
+              </a>
+            </Link>
 
             <div className="flex items-center space-x-4">
               <HoverCard>
